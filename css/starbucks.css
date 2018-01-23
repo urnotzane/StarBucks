@@ -1,13 +1,24 @@
-body{
+body,div{
 	color: #515151;
+	margin: 0;
+	padding: 0;
+	font-weight: 400;
+	font-family: AvenirRoman, HelveticaNeue-Light, Helvetica Neue, arial, Hiragino Sans GB, 冬青黑体, Microsoft YaHei New, Microsoft Yahei, 微软雅黑, 宋体, SimSun, STXihei, 华文细黑, sans-serif;
 }
-.top_nav #menu,#staricon,#loginspan{
-	height: 98px;
-	padding: 25px 30px;
-}
-.top_nav{
+#top_nav{
 	width:100%;
-	height:98px;
+	height:105px;
+	border-bottom: 1px solid #ddd;
+	border-top: 3px solid #ddd;
+	margin-left: 0;
+	position: fixed;
+	top: 0px;
+	background-color: #fff;
+	z-index: 99;
+}
+#top_nav #menu,#staricon,#loginspan{
+	height: 105px;
+	padding: 25px 30px;
 }
 #menu{
 	text-align: left; 
@@ -15,19 +26,102 @@ body{
 #staricon{
 	text-align: center;
 }
+#staricon img{
+	width: 73px;
+	height: 73px;
+	margin-top: -10px;
+}
 #loginspan{
 	text-align: right;
+}
+#loginspan a{
+	font-size: 14px;
+	color: #b89f7a;
+	font-weight: 700;
+}
+#loginspan a:hover{
+	color: #967a50;
 }
 #menu img{
 	width: 25px;
 	height:28px;
-	margin-left: 30px;
 }
 #menu span{
 	font-size: 12px;
-	padding-left: 30px;
 }
 #loginspan span{
 	line-height: 23px;
-	font-size: 15px;
+	font-size: 16px;
 }
+#indeximg{
+	 margin-top:105px;
+}
+#indeximg div img{
+	 max-width: 100%;
+}
+#leftmenu{
+	position:absolute;
+	left: 0px;
+	top:0;
+	z-index: 100;
+	background-color: #292929;
+	width: 270px;
+	height: 100%;
+	color: #fff;
+}
+#leftmenu #menutop{
+	padding: 10px 0;
+	border-bottom: 1px solid #515151;
+	font-size: 16px;
+}
+#leftmenu #menutop a{
+	color: #b89f7a;
+}
+#leftmenu #menutop a:hover{
+	color: #fff;
+}
+.menua,.menuli{
+	width: 270px;
+	height: 50px;
+	padding: 10px 20px;
+	display: block;
+	line-height: 30px;
+}
+.menuli{
+	padding: 10px 30px;
+}
+#leftmenu #menubottom{
+	padding: 10px 0;
+	font-size: 16px;
+}
+#menubottom a{
+	color: #fff;
+}
+#menubottom a:hover{
+	color: #b89f7a;
+}
+span.caret{
+	float: right;
+	margin-top: 15px;
+}
+.menua li{
+	width: 230px
+	height: 20px;
+}
+a.menuli{
+	color: aaa;
+}
+#menubottom .menuul a{
+	color: #aaa;
+}
+#menubottom .menuul a:hover{
+	color: #b89f7a;
+}
+
+
+
+
+
+
+
+
