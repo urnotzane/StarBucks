@@ -6,7 +6,6 @@
 		 <script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
 		 <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
 		 <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
-		 <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 		 <!-- HTML5 Shiv 和 Respond.js 用于让 IE8 支持 HTML5元素和媒体查询 -->
 		 <!-- 注意： 如果通过 file://  引入 Respond.js 文件，则该文件无法起效果 -->
 		 <!--[if lt IE 9]>
@@ -44,6 +43,7 @@
 						 </a>
 					 </div>
 				 </div>
+				 <div id="screen"></div>
 				 <div id="leftmenu" >
 					 <div id="menutop">
 						 <ul>
@@ -70,81 +70,131 @@
 						 </ul>
 					 </div>
 					 <div id="menubottom" >
-						  <ul>
-							 <li>
-								 <a href="starbucks.html"  class="menua">
-									 首页
+						 <ul class="menuul">
+						 	 <li><a href="#" class="menua">首页</a></li>
+						 	 <li class="dropdown">
+								 <a href="#" class="dropdown-toggle menua" data-toggle="dropdown">
+								 	 新品推荐<span class="caret"></span>
 								 </a>
-							 </li>
-							 <li>
-								 <a href="starbucks.html"  class="menua">
-									 新品推荐
-									 <span class="caret"></span>
-								 </a>
-								 <ul class="menuul">
-									 <li>
-										 <a href="starbucks.html"  class="menuli">
-											 English
-										 </a>
-									 </li>
-									 <li>
-										 <a href="starbucks.html"  class="menuli">
-											 星巴克门店
-										 </a>
-									 </li>
-									 <li>
-										 <a href="starbucks.html"  class="menuli">
-											 上海烘焙工坊
-										 </a>
-									 </li>
+								 <ul class="dropdown-menu" id="dropdown-menu1">
+								 	 <li><a href="#">当季新品</a></li>
+								 	 <li><a href="#">咖啡融合冰淇淋</a></li>
+								 	 <li><a href="#">冷萃冰咖啡</a></li>
+								 	 <li><a href="#">气致™冷萃咖啡</a></li>
+								 	 <li><a href="#">早安新一天</a></li>
+								 	 <li><a href="#">星巴克ORIGAMI™</a></li>
 								 </ul>
-							 </li>
-							 <li>
-								 <a href="starbucks.html"  class="menua">
-									 星享俱乐部
+						 	 </li>
+						 	 <li><a href="#" class="menua">星享俱乐部</a></li>
+						 	 <li class="dropdown">
+								 <a href="#" class="dropdown-toggle menua" data-toggle="dropdown">
+								 	 星巴克移动应用<span class="caret"></span>
 								 </a>
-							 </li>
-							  <li>
-								 <a href="starbucks.html"  class="menua">
-									 星巴克移动应用
-									 <span class="caret"></span>
+								 <ul class="dropdown-menu" id="dropdown-menu2">
+								 	 <li><a href="#">星巴克移动应用</a></li>
+								 	 <li><a href="#">星巴克Apple Watch</a></li>
+								 </ul>
+						 	 </li>
+						 	 <li><a href="#" class="menua">星礼卡</a></li>
+						 	 <li class="dropdown">
+								 <a href="#" class="dropdown-toggle menua" data-toggle="dropdown">
+								 	 咖啡文化<span class="caret"></span>
 								 </a>
-							 </li>
-							  <li>
-								 <a href="starbucks.html"  class="menua">
-									 星礼卡
+								 <ul class="dropdown-menu" id="dropdown-menu3">
+								 	 <li><a href="#">咖啡文化</a></li>
+								 	 <li><a href="#">星巴克臻选™咖啡</a></li>
+								 	 <li><a href="#">如何冲泡咖啡</a></li>
+								 </ul>
+								 <li class="dropdown">
+								 <a href="#" class="dropdown-toggle menua" data-toggle="dropdown">
+								 	 饮品美食<span class="caret"></span>
 								 </a>
-							 </li>
-							  <li>
-								 <a href="starbucks.html"  class="menua">
-									 咖啡文化
-									 <span class="caret"></span>
+								 <ul class="dropdown-menu" id="dropdown-menu4">
+								 	 <li><a href="#">饮品</a></li>
+								 	 <li><a href="#">星巴克美食</a></li>
+								 	 <li><a href="#">星巴克咖啡</a></li>
+								 	 <li><a href="#">星巴克VIA® 免煮咖啡</a></li>
+								 	 <li><a href="#">茶瓦纳™</a></li>
+								 </ul>
+								 <li class="dropdown">
+								 <a href="#" class="dropdown-toggle menua" data-toggle="dropdown">
+								 	 关于我们<span class="caret"></span>
 								 </a>
-							 </li>
-							  <li>
-								 <a href="starbucks.html"  class="menua">
-									 饮品美食
-									 <span class="caret"></span>
+								 <ul class="dropdown-menu" id="dropdown-menu5">
+								 	 <li><a href="#">企业新闻</a></li>
+								 	 <li><a href="#">我们的使命和价值观</a></li>
+								 	 <li><a href="#">星巴克责任</a></li>
+								 	 <li><a href="#">工作在星巴克中国</a></li>
+								 	 <li><a href="#">加入星巴克</a></li>
+								 	 <li><a href="#">星巴克在中国</a></li>
+								 	 <li><a href="#">历史回顾</a></li>
+								 </ul>
+								 <li class="dropdown">
+								 <a href="#" class="dropdown-toggle menua" data-toggle="dropdown">
+								 	 帮助中心<span class="caret"></span>
 								 </a>
-							 </li>
-							  <li>
-								 <a href="starbucks.html"  class="menua">
-									 关于我们
-									 <span class="caret"></span>
-								 </a>
-							 </li>
-							  <li>
-								 <a href="starbucks.html"  class="menua">
-									 帮助中心
-									 <span class="caret"></span>
-								 </a>
-							 </li>
+								 <ul class="dropdown-menu" id="dropdown-menu6">
+								 	 <li><a href="#">常见问题</a></li>
+								 	 <li><a href="#">联系我们</a></li>
+								 	 <li><a href="#">使用条款</a></li>
+								 	 <li><a href="#">隐私权政策</a></li>
+								 </ul>
 						 </ul>
 					 </div>
-					 
 				 </div>
+				 <div id="blackdivid"></div>
 			 </div>
 			 <div id="footer" ></div>
 		 </div>
+		 <script>
+		 	 //下拉菜单上下滑动效果
+		 	 var menuSlideToggle = function() {
+		 	 	var dropdown_toggle = $("#leftmenu .dropdown-toggle");
+		 	 	dropdown_toggle.click(function() {
+		 	 		 var slideH = $(this).next().height();
+		 	 		 $(this).next().slideToggle();
+		 	 		 var parent_next = $(this).parent().next();
+		 	 		 if(parseInt(parent_next.css("margin-top")) !== slideH ) {
+		 	 			 parent_next.animate({marginTop:slideH+"px"})
+		 	 		 }else{
+		 	 			 parent_next.animate({marginTop:"0"})
+		 	 		 }
+		 	 	})
+		 	 }
+		 	 //左边菜单隐藏或显示
+		 	 var menuAnimation = function() {
+		 	 	var screenDiv = $("#screen");
+		 	 	var leftmenu = $("#leftmenu");
+		 	 	var menu = $("#menu");
+		 	 	var count = 0;
+		 	 	screenDiv.click(function(){
+		 	 		leftmenu.animate({left: "-"+leftmenu.width()});
+		 	 		screenDiv.fadeToggle();
+		 	 		count = 0;
+		 	 	})
+		 	 	menu.click(function() {
+		 	 		leftmenu.animate({left: "0"});
+		 	 		screenDiv.fadeToggle();
+		 	 		count = 0;
+		 	 	})
+		 	 	//鼠标滚动
+		 	 	$(document).scroll(function(){
+		 	 		count++;
+		 	 		if(count == 1) {
+		 	 			leftmenu.animate({left: "-"+leftmenu.width()});
+		 	 			screenDiv.fadeOut();
+		 	 		}
+		 	 	})
+		 	 }
+		 	 //鼠标滚动顶部导航上下滑动
+		 	 var topNavAnimation = function() {
+		 	 	
+		 	 }
+
+		 	 $(document).ready(function() {
+		 	 	 menuSlideToggle();
+		 	 	 menuAnimation();
+		 	 })
+		 </script>
 	 </body>
  </html>

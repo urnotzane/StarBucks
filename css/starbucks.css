@@ -5,6 +5,10 @@ body,div{
 	font-weight: 400;
 	font-family: AvenirRoman, HelveticaNeue-Light, Helvetica Neue, arial, Hiragino Sans GB, 冬青黑体, Microsoft YaHei New, Microsoft Yahei, 微软雅黑, 宋体, SimSun, STXihei, 华文细黑, sans-serif;
 }
+#content{
+	width: 100%;
+	height: 100%;
+}
 #top_nav{
 	width:100%;
 	height:105px;
@@ -14,7 +18,7 @@ body,div{
 	position: fixed;
 	top: 0px;
 	background-color: #fff;
-	z-index: 99;
+	z-index: 66;
 }
 #top_nav #menu,#staricon,#loginspan{
 	height: 105px;
@@ -59,20 +63,32 @@ body,div{
 #indeximg div img{
 	 max-width: 100%;
 }
+#screen{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	bottom: 0;
+	z-index: 67;
+	background: rgba(0,0,0,0.5);
+	display: none;
+	overflow: hidden;
+}
 #leftmenu{
-	position:absolute;
-	left: 0px;
-	top:0;
-	z-index: 100;
+	position:fixed;
+	left: -270px;
+	top: 0;
+	z-index: 68;
 	background-color: #292929;
 	width: 270px;
 	height: 100%;
 	color: #fff;
+	overflow-y: auto;
+	overflow-x: hidden;
 }
 #leftmenu #menutop{
 	padding: 10px 0;
 	border-bottom: 1px solid #515151;
-	font-size: 16px;
+	font-size: 15px;
 }
 #leftmenu #menutop a{
 	color: #b89f7a;
@@ -80,43 +96,51 @@ body,div{
 #leftmenu #menutop a:hover{
 	color: #fff;
 }
-.menua,.menuli{
+.menua{
 	width: 270px;
-	height: 50px;
-	padding: 10px 20px;
+	height: 47px;
+	padding: 10px 15px;
 	display: block;
 	line-height: 30px;
-}
-.menuli{
-	padding: 10px 30px;
-}
-#leftmenu #menubottom{
-	padding: 10px 0;
-	font-size: 16px;
-}
-#menubottom a{
-	color: #fff;
-}
-#menubottom a:hover{
-	color: #b89f7a;
+	margin-top: 0;
 }
 span.caret{
 	float: right;
-	margin-top: 15px;
+	margin-top: 10px;
+	margin-right: 10px;
 }
-.menua li{
-	width: 230px
-	height: 20px;
+#leftmenu #menubottom{
+	padding: 10px 0;
+	line-height: 30px;
+	font-size: 15px;
 }
-a.menuli{
-	color: aaa;
+#leftmenu #menubottom ul{
+	padding: 0;
+	box-shadow: none;
+	border: none;
+	margin-top: 0;
 }
-#menubottom .menuul a{
+#leftmenu #menubottom a{
+	color: #fff;
+}
+#menubottom #dropdown-menu1 a,#menubottom #dropdown-menu2 a,#menubottom #dropdown-menu3 a,#menubottom #dropdown-menu4 a,#menubottom #dropdown-menu5 a,#menubottom #dropdown-menu6 a{
 	color: #aaa;
+	padding: 5px 25px;
+	width: 270px;
+	height: 37px;
+	background-color: #292929;
+	line-height: 27px;
 }
-#menubottom .menuul a:hover{
+#leftmenu #menubottom a:hover,#menubottom #dropdown-menu a:hover{
 	color: #b89f7a;
 }
+#blackdivid{
+	height: 220px;
+	max-width: 100%;
+	background-color: #000;
+	margin-top: -3px;
+}
+
 
 
 
