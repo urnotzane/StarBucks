@@ -140,6 +140,25 @@ span.caret{
 	background-color: #000;
 	margin-top: -3px;
 }
+#starappbg img{
+	max-width: 100%;
+	height: 329px;
+}
+#winterCoffe{
+	position: relative;
+	width: 100%;
+	margin: 0;
+	height: 100%;
+}
+.doubleimg{
+	margin: 0;
+	padding: 0;
+	width: 50%;
+	height: 100%;
+}
+.doubleimg,.doubleimg img{
+	height: auto;
+}
 
 
 

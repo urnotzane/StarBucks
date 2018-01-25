@@ -20,15 +20,15 @@
 		 <div id="wrapper" >
 			 <div id="content" >
 				 <div id="top_nav" class=" row">
-					 <div id="menu" class="col-xs-4">
+					 <div id="menu" class="col-xs-5">
 						 <img src="img/menu.png" />
 						 <br/>
 						 <span>菜单&nbsp;</span>
 					 </div>
-					 <div id="staricon" class="col-xs-4" >
+					 <div id="staricon" class="col-xs-2" >
 						 <img src="https://www.starbucks.com.cn/_themes/starbucks/img/logo.svg" >
 					 </div>
-					 <div id="loginspan" class="col-xs-4" >
+					 <div id="loginspan" class="col-xs-5" >
 						 <span>星享俱乐部</span>
 						 <br/>
 						 <a href="#" >登录</a>
@@ -143,6 +143,17 @@
 					 </div>
 				 </div>
 				 <div id="blackdivid"></div>
+				 <div id="starapp">
+					<div id="starappbg"><img src="https://www.starbucks.com.cn/_themes/starbucks/img/home/app-web.png"></div>
+				 </div>
+				 <div id="winterCoffe row" >
+					<div class="doubleimg col-xs-6">
+						<img src="https://www.starbucks.com.cn/assets/img/tmall-banner-20180109104542.jpg">
+					</div>
+					<div class="doubleimg col-xs-6">
+						<img src="https://www.starbucks.com.cn/assets/img/FT-Grid%20(2)-20170328191448.jpg">
+					</div>
+				 </div>
 			 </div>
 			 <div id="footer" ></div>
 		 </div>
@@ -178,7 +189,7 @@
 		 	 		count = 0;
 		 	 	})
 		 	 	//鼠标滚动
-		 	 	$(document).scroll(function(){
+		 	 	$(window).scroll(function(){
 		 	 		count++;
 		 	 		if(count == 1) {
 		 	 			leftmenu.animate({left: "-"+leftmenu.width()});
@@ -188,12 +199,41 @@
 		 	 }
 		 	 //鼠标滚动顶部导航上下滑动
 		 	 var topNavAnimation = function() {
-		 	 	
+		 	 	var p=0,t=$(window).scrollTop();
+		 	 	console.log(t)
+		 	 	$(window).scroll(function() {
+		 	 		p = $(this).scrollTop();
+			 	 	if(p > 105) {
+			 	 		if(t < p){
+			 	 		//往下
+			 	 		$("#top_nav").slideUp();
+			 	 	}else {
+			 	 		//往上
+			 	 		$("#top_nav").slideDown();
+			 	 	}
+			 	 	//每次比较完大小都重置当前高度t的值
+			 	 	t = p;
+		 	 		}
+		 	 	})
+		 	 }
+		 	 //调整元素高度和宽度
+		 	 var winWH = function() {
+		 	 		var height = $(window).height();
+		 	 		var width = $(window).width();
+		 	 		console.log();
+		 	 		$(".doubleimg>img").css("width",width/2);
 		 	 }
 
 		 	 $(document).ready(function() {
 		 	 	 menuSlideToggle();
 		 	 	 menuAnimation();
+		 	 	 topNavAnimation();
+		 	 	 winWH();
+		 	 	 //窗口调整函数
+		 	 	 $(window).resize(function(){
+		 	 	 	winWH();
+		 	 	 })
+
 		 	 })
 		 </script>
 	 </body>
