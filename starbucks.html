@@ -146,7 +146,7 @@
 				 <div id="starapp">
 					<div id="starappbg"><img src="https://www.starbucks.com.cn/_themes/starbucks/img/home/app-web.png"></div>
 				 </div>
-				 <div id="winterCoffe row" >
+				 <div id="winterCoffe" class="row">
 					<div class="doubleimg col-xs-6">
 						<img src="https://www.starbucks.com.cn/assets/img/tmall-banner-20180109104542.jpg">
 					</div>
@@ -154,6 +154,10 @@
 						<img src="https://www.starbucks.com.cn/assets/img/FT-Grid%20(2)-20170328191448.jpg">
 					</div>
 				 </div>
+				 <div id="sayitgreen"></div>
+				 <div id="applewatch"></div>
+				 <div id="starauslese"></div>
+				 <div id="reserve"></div>
 			 </div>
 			 <div id="footer" ></div>
 		 </div>
@@ -200,7 +204,6 @@
 		 	 //鼠标滚动顶部导航上下滑动
 		 	 var topNavAnimation = function() {
 		 	 	var p=0,t=$(window).scrollTop();
-		 	 	console.log(t)
 		 	 	$(window).scroll(function() {
 		 	 		p = $(this).scrollTop();
 			 	 	if(p > 105) {
@@ -212,15 +215,16 @@
 			 	 		$("#top_nav").slideDown();
 			 	 	}
 			 	 	//每次比较完大小都重置当前高度t的值
-			 	 	t = p;
-		 	 		}
+			 	 		t = p;
+			 	 	}
+		 	 		
 		 	 	})
+		 	 	
 		 	 }
 		 	 //调整元素高度和宽度
 		 	 var winWH = function() {
 		 	 		var height = $(window).height();
 		 	 		var width = $(window).width();
-		 	 		console.log();
 		 	 		$(".doubleimg>img").css("width",width/2);
 		 	 }
 
