@@ -1,0 +1,83 @@
+body,div{
+	color: #515151;
+	margin: 0;
+	padding: 0;
+	font-weight: 400;
+	font-family: AvenirRoman, HelveticaNeue-Light, Helvetica Neue, arial, Hiragino Sans GB, 冬青黑体, Microsoft YaHei New, Microsoft Yahei, 微软雅黑, 宋体, SimSun, STXihei, 华文细黑, sans-serif;
+}
+.container{
+	padding: 0;
+	margin: 0;
+}
+#top-nav{
+	position: fixed;
+	top: 0px;
+	width:100%;
+	height:105px;
+	border-bottom: 1px solid #ddd;
+	border-top: 3px solid #ddd;
+	margin-left: 0;
+	background-color: #fff;
+	z-index: 66;
+}
+#menu,#staricon,#loginspan{
+	height: 105px;
+	padding: 25px 30px;
+}
+
+#menu{
+	text-align: left; 
+}
+#staricon{
+	text-align: center;
+}
+#staricon img{
+	width: 73px;
+	height: 73px;
+	margin-top: -10px;
+}
+#loginspan{
+	text-align: right;
+}
+#loginspan a{
+	font-size: 14px;
+	color: #b89f7a;
+	font-weight: 700;
+}
+#loginspan a:hover{
+	color: #967a50;
+}
+#menu img{
+	width: 25px;
+	height:28px;
+}
+#menu{
+	font-size: 12px;
+}
+#loginspan p{
+	padding-top: 6px;
+	line-height: 23px;
+	font-size: 16px;
+}
+/** iPhone **/
+@media (max-device-width:415px) {
+    #staricon{
+		padding: 25px 0;
+	}
+	#menu,#loginspan{
+		padding: 25px 15px;
+	}
+	#staricon img{
+		width: 62px;
+		height: 62px;
+		margin-top: -5px;
+	}
+	#loginspan a{
+		font-size: 12px;
+	}
+	#loginspan p,#loginspan span{
+		line-height: 14px;
+		font-size: 12px;
+		padding-top: 12px;
+	}
+}

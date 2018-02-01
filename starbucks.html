@@ -1,8 +1,8 @@
  <!DOCTYPE html>
  <html>
 	 <head>
-		 <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8" >
-		 <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+		 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no" charset="UTF-8" >
+		 <!-- jQuery文件。务必在bootstrap.min.js 之前引入, user-scalable = no 属性能够解决 iPad 切换横屏之后触摸才能回到具体尺寸的问题。 -->
 		 <script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
 		 <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
 		 <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
@@ -29,8 +29,7 @@
 						 <img src="https://www.starbucks.com.cn/_themes/starbucks/img/logo.svg" >
 					 </div>
 					 <div id="loginspan" class="col-xs-5" >
-						 <span>星享俱乐部</span>
-						 <br/>
+						 <p>星享俱乐部</p>
 						 <a href="#" >登录</a>
 						 <span>或</span>
 						 <a href="#" >注册</a>
@@ -140,9 +139,25 @@
 								 	 <li><a href="#">隐私权政策</a></li>
 								 </ul>
 						 </ul>
-					 </div>
+					 </div></div>
+				 <div id="blackdivid" >
+				 	 <div class="row-fluid center-box ">
+						 <div class="rewards-card span4">
+					 	 	 <p>星享卡</p>
+						 	 <div class="rewards-logo"></div>
+					 	 </div>
+						 <div class="rewards-club span4">
+						 	 <h3>星享俱乐部</h3>
+						 	 <p>开启您的星享之旅，星星越多、会员等级越高、好礼越丰富</p>
+						 	 </br>
+						 	 <div>
+						 	 	 <a href="#" class="btn btn-lg ">注册</a>
+						 	 	 <a href="#" class="btn btn-lg ">登录</a>
+						 	 	 <a href="#" class="rewards-more">了解更多 >></a>
+						 	 </div>
+						 </div>
+				 	 </div>
 				 </div>
-				 <div id="blackdivid"></div>
 				 <div id="starapp">
 					<div id="starappbg"><img src="https://www.starbucks.com.cn/_themes/starbucks/img/home/app-web.png"></div>
 				 </div>
